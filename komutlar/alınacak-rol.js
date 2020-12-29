@@ -3,14 +3,14 @@ const db = require('quick.db')
 //pythonic
 exports.run = async(client, message, args) => {
 
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(` Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(` ⛔ Bu komutu kullanabilmek için "\`yönetici\`" yetkisine sahip olmalısın`);
 //pythonic
 if(args[0] === "sıfırla") {//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic
 const sıfırlandı = new discord.MessageEmbed()//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic
 .setAuthor(client.user.username, client.user.avatarURL())  //pythonic//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic
 .setTitle(`${client.user.username} - Alınacak Rolü Sıfırla `)
 .setColor('BLACK')//pythonic//pythonic//pythonic//pythonic//pythonic//pythonic
-.setDescription(`Kayıt Olunca Otomatik Alınacak Rol Sıfırlandı ! `)//pythonic//pythonic//pythonic//pythonic//pythonic
+.setDescription(`❌ Kayıt Olunca Otomatik Alınacak Rol Sıfırlandı ! `)//pythonic//pythonic//pythonic//pythonic//pythonic
 .setThumbnail(client.user.avatarURL())
 .setFooter(`Komut ${message.author.tag} Tarafından Kullanıldı ! `)//pythonic//pythonic//pythonic//pythonic
 message.channel.send(sıfırlandı)//pythonic//pythonic//pythonic
